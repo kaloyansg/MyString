@@ -1,5 +1,5 @@
 #include "MyString.h"
-
+//toq sting ne e mnogo correcten, trqbva da se hvana da go opraq
 MyString::MyString() : MyString("\0"){}
 
 MyString::MyString(const char* str)
