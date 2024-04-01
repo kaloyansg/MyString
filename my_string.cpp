@@ -163,6 +163,7 @@ void my_string::clear()
 void my_string::free()
 {
 	delete[] arr;
+	arr = nullptr;
 	length = 0;
 }
 
