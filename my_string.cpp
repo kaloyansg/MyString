@@ -228,6 +228,21 @@ my_string& my_string::operator+=(char c)
 
 bool my_string::operator==(const my_string& other) const
 {
+	if (!this->arr)
+	{
+		if (!other.arr)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	else if (!other.arr)
+	{
+		return false;
+	}
 	return strcmp(this->arr, other.arr) == 0;
 }
 
